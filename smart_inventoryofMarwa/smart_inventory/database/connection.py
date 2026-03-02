@@ -12,7 +12,7 @@ from mysql.connector.connection import MySQLConnection
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "",          # ← set your password
+    "password": "marwa@2004",          # ← set your password
     "database": "smart_inventory",
     "charset": "utf8mb4",
     "autocommit": False,
@@ -26,3 +26,4 @@ def get_connection(**overrides) -> MySQLConnection:
     """
     config = {**DB_CONFIG, **overrides}
     return mysql.connector.connect(**config)
+
